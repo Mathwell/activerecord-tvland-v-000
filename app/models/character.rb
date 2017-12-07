@@ -6,8 +6,5 @@ class Character < ActiveRecord::Base
     "#{name} always says: #{catchphrase}"
   end
 
-  def unbuild_show(show)
-    Show.all.first
-  end
 
 end
