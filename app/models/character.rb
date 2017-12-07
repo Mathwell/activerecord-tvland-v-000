@@ -7,7 +7,7 @@ class Character < ActiveRecord::Base
   end
 
   def build_show(show)
-    actor.shows.detect {|s| s.characters.include?(self)}
+    Show.all.detect {|s| s.characters.include?(self)}
   end
 
 end
