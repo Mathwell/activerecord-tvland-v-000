@@ -7,7 +7,7 @@ class Character < ActiveRecord::Base
   end
 
   def build_show(show)
-    Shows.find {|s| s.characters.include?(self)}
+    Show.find {|s| s.characters.include?(self)}
   end
 
 end
